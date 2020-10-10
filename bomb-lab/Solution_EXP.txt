@@ -1,0 +1,18 @@
+Phase_1: Just look at what the input string is being compared to.
+
+Phase_2: Saw the input was six numbers and then deduced that it was the fibonacci sequence.
+
+Phase_3: Saw that it was a switch case. Then figured out first input would change the case and second input needed to be the final number.
+Went through and added it all up to see what I would need.
+
+Phase_4: Saw input needed to be two numbers, saw second arg needed to be less than or equal to 4. It was then just tracking the numbers through the recursion.
+
+Phase_5: Saw that a string was being input. This string was then being anded with a mask to get lowest order 4 bits.
+This number was then used to access the first part of a string that had a bunch of random letters. I then saw
+that the string I wanted to get needed to math sabres. Worked backwards from there.
+
+Phase_6: First saw that you needed six numbers. The numbers needed to be from 1-6 and each number had to be unique.
+Then saw that these numbers were being used to index a linked list. Guessed that this would be an ordering thing,
+verfified this and solved it.
+
+Secret_Phase: Basically I could tell the input need to be bounded such that 36< x <=50.

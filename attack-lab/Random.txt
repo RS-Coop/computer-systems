@@ -1,0 +1,32 @@
+Phase 1:
+Ret 401386
+buf is 0x18 down, so 24 bytes down
+
+Phase 2:
+Ret 4013b2
+buf is 0x18 down, so 24 bytes down
+val is cookie = 0x4bca8e48
+
+stack is 0x55648998
+
+return to 0x55648998
+set $rdi to cookie
+ret to 4013b2
+
+Phase 3:
+Need to set %rdi to adress of cookie string
+string cookie is 4b ca 8e 48 00
+
+In terms of bottom to top
+set rdi
+push touch2
+ret
+adress for set rdi
+NULL
+NULL
+cookie string
+
+Phase 4:
+pop cookie into rax 0x401563
+mov rax to rdi 0x401577
+return to touch 2

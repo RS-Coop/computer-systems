@@ -1,0 +1,3 @@
+break explode_bomb
+
+display/i $pc
